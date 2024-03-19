@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Loading Page</title>
-    .middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    }
+    <style>
+        body, html {
+            height: 100%
+        }
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .bottom{
+            position: absolute;
+            bottom: 0%;
+            left: 43%;
+        }
+        .bottom img{
+            width: 20px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
 <div class="middle">
     <img class="loading" src="loading.gif" />
 </div>
-
+<div class="bottom">
+    <h1>try again, click <a href="https://www.twitch.tv/"><img src="twitch.jpg"></a></h1>
+</div>
 </body>
 </html>
